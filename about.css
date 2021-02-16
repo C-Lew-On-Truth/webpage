@@ -1,0 +1,298 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-style: arial;
+    background: black;
+    color: rgb(255, 215, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* ---- Main Holder ------*/
+
+.about-grid {
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-template-rows: 65vh;
+    width: 90%;
+    height: 90vh;
+    grid-gap: 0;
+    box-shadow: 0 0 0 6px gold;
+}
+
+.header {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ------ Item size styles -----*/
+
+.items-1 {
+    grid-column: 2 / 1;
+    box-shadow: 0 0 0 3px gold;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-2 {
+    box-shadow: 0 0 0 3px gold;
+    ;
+}
+
+.items-3 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    box-shadow: 0 0 0 3px gold;
+    display: grid;
+}
+
+/* ------ Item size styles -----*/
+
+.item-1-grid {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+}
+
+/* ------ Hobbies and Interest -----*/
+
+.interest {
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+}
+
+/* ------ Hobbies and Interest -----*/
+
+/* ------ Companies and Skills -----*/
+
+.skills {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 35%;
+    grid-gap: 0;
+}
+
+.skills li {
+    margin: 0;
+    text-align: center;
+}
+
+.companies {
+    display: grid;
+    grid-gap: 0;
+    place-items: center;
+    width: 95%;
+    height: auto;
+    margin: 0;
+}
+
+
+.jobs {
+    width: 95%;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4%;
+    align-items: center;
+    padding: 1%;
+}
+
+.icon {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+}
+
+.jobs h3 {
+    margin: 0;
+    width: 20vw;
+}
+
+.jobs span {
+    width: 20vw
+}
+
+/* ------ Companies and skills -----*/
+
+/* ------ Story Time -----*/
+
+/*--
+.story {
+    
+    display: flex;
+    flex-direction: column;
+}
+--*/
+
+.story-time {
+    margin: 0;
+    font-size: 2vh;
+    padding: 4%;
+}
+
+.muppet {
+    margin: 0 auto;
+    width: 25vw;
+    padding-bottom: 2%;
+}
+
+/* ------ Story Time -----*/
+
+/* ------ Menu Styles -----*/
+
+.extra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.github, .resume, .home {
+    font-size: 1.5vw;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(255, 215, 0);
+    width: auto;
+    margin: auto;
+    padding: 2%;
+}
+
+.github:hover, .resume:hover, .home:hover {
+    color: black;
+    background: gold;
+}
+
+/* ------ Menu Styles -----*/
+
+@media screen and (max-width: 1100px) {
+    .extra {
+        margin: 0 auto;
+        font-size: 3vh;
+        padding: 1%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 0;
+        background: rgb(255, 215, 0);
+        color: black;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10vh;
+    }
+    .github, .resume, .home {
+        color: black;
+        font-size: 3vw;
+    }
+    .github:hover, .resume:hover, .home:hover {
+        color: white;
+        background: none;
+    }
+    .about-grid {
+        width: 90%;
+        margin-top: 20%;
+        border: 0;
+        grid-template-rows: auto auto auto;
+        box-shadow: none;
+        grid-gap: 2%;
+    }
+    .header {
+        font-size: 4vw;
+    }
+    .items-1 {
+        grid-column: 1 /span 2;
+        grid-row: 1 / span 1;
+        box-shadow: none;
+        border: dashed;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 90%;
+        grid-gap: 4%;
+        font-size: 3vw;
+        margin: 2% auto;
+        padding-bottom: 5%;
+        place-items: center;    
+    }
+
+    .companies {
+        place-items: center;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .jobs {
+        justify-content: center;
+        width: 90%;
+        font-size: 3vw;
+        grid-gap: 1%;
+        justify-content: space-evenly;
+    }
+
+    .jobs h3 {
+        text-align: center;
+        width: 50vw
+    }
+
+    .items-2 {
+        grid-column: 1 /span 2;
+        grid-row: 2 / span 1;
+        box-shadow: none;
+        border: dashed;
+    }
+    .items-3 {
+        grid-column: 1 /span 2;
+        grid-row: 3 / span 1;
+        box-shadow: none;
+        border: dashed;
+    }
+
+    .header {
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    .jobs h3 {
+        margin: auto;
+        font-size: 3vw;
+    }
+    .icon {
+        width: 8vw;
+        height: 8vw
+    }
+    .interest {
+        margin: 2% auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        font-size: 3vw;
+        place-items: center;
+    }
+    
+    .story-time {
+        margin-top: 0;
+        font-size: 3vw;
+        padding-bottom: 5%;
+    }
+    .muppet {
+        width: 50vw;
+        height: 40vh;
+    }
+}
