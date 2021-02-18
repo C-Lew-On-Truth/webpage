@@ -19,7 +19,7 @@
 .home {
     display: grid;
     place-items: center;
-    grid-template-rows: 80vh 20vh;
+    grid-template-rows: 80vh 19vh;
 }
 
 video {
@@ -29,29 +29,28 @@ video {
 }
 
 .menu {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    grid-template-columns: 1fr 60% 1fr;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .words {
     text-align: center;
-    flex: 60%;
+    width: 100%;
     opacity: 0;
     font-size: 2.5vw;
     transition-property: opacity;
-    transition-duration: 5s;
+    transition-duration: 3s;
 }
 
-.bio {float: right}
-.videos, .bio {   
+.videos, .bio {  
     text-align: center;
     opacity: 0;
     font-size: 2.5vw;
     transition-property: opacity;
-    transition-duration: 5s;
+    transition-duration: 3s;
 }
 
 .videos:hover, .bio:hover {

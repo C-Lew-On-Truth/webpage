@@ -3,15 +3,11 @@
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    align-items: center;
+  
     font-style: arial;
     background: black;
-    color: gold
+    color: gold;
+   
 }
 
 .carousel-holder {
@@ -29,13 +25,15 @@ html, body {
     font-size: 4vw;
     width: 100%;
     text-align: center;
+   
 }
 
 .v-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 5fr 70vw 5fr;
+    grid-template-columns: 1fr 70vw 1fr;
     grid-gap: 0;
+    place-items: center;
     align-items: center;
     justify-content: center;
 }
@@ -47,6 +45,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 .v-info {
