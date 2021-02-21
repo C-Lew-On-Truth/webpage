@@ -15,15 +15,17 @@ menu.onclick = (ev) => {
 
 words.innerHTML = "THANK YOU FOR LOOKING AT MY WEB PAGE!";
 
+
 setTimeout(() => {
   words.style.opacity = "1";
- 
 }, 1000);
 
-
 setTimeout(() => {
-  words.style.opacity = "0";
-}, 4000);
+  words.style.opacity = "0"
+}, 4000)
+setTimeout(() => {
+  words.hidden = true
+}, 7000)
 
 /*
 setTimeout(() => {
@@ -32,8 +34,8 @@ setTimeout(() => {
 */
 
 setTimeout(() => {
-  bio.style.width = "100%";
-  videos.style.width = "100%";
+  bio.style.width = "95%";
+  videos.style.width ="95%";
   bio.style.opacity = "1";
   videos.style.opacity = "1";
   bio.innerHTML = "BACKGROUND";
