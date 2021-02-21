@@ -1,6 +1,6 @@
 html, body {
     margin: 0;
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: grid;
     place-items: center;
@@ -15,7 +15,7 @@ html, body {
 .about-grid {
     display: grid;
     grid-template-columns: auto 40%;
-    grid-template-rows: 65vh;
+    grid-template-rows: 60vh auto;
     width: 90%;
     height: 90vh;
     grid-gap: 5px;
@@ -41,7 +41,9 @@ html, body {
 }
 
 .items-2 {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: black;
 }
 
@@ -68,7 +70,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: auto;
+    
 }
 
 /* ------ Hobbies and Interest -----*/
@@ -76,18 +78,18 @@ html, body {
 /* ------ Companies and Skills -----*/
 
 .skills {
-    margin: 0;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 40% 40% 40%;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 30%;
-    grid-gap: 0;
-    padding: 1%;
+    align-items: center;
+    justify-content: space-evenly;
+
+    grid-gap: 5%;
 }
 
 .skills li {
     margin: 0;
-    text-align: center;
 }
 
 
@@ -97,8 +99,7 @@ html, body {
     grid-gap: 0;
     place-items: center;
     width: 95%;
-    height: auto;
-    margin: 0;
+    padding: 1%
 }
 
 
@@ -109,7 +110,7 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4%;
     align-items: center;
-    padding: 1%;
+    padding: 4px;
 }
 
 .icon {
