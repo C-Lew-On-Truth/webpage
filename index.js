@@ -42,5 +42,5 @@ setTimeout(() => {
   videos.innerHTML = "DEMO REELS";
 }, 7000);
 
-console.log("height is " + window.innerHeight);
-console.log("width is " + window.innerWidth);
+//console.log("height is " + window.innerHeight);
+//console.log("width is " + window.innerWidth);

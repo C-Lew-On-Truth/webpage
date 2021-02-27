@@ -1,5 +1,4 @@
-console.log(window.innerWidth);
-console.log("hello");
+//console.log(window.innerWidth);
 let story = document.querySelector(".story");
 let storyTime = document.querySelector(".story-time");
 storyTime.innerHTML = 
@@ -35,10 +34,10 @@ extra.onclick = (ev) => {
   let target = ev.target.className;
   switch (target) {
     case "github":
-      console.log("github");
+      //console.log("github");
       break;
     case "resume":
-      console.log("show resume");
+      //console.log("show resume");
       
       break;
     case "home":

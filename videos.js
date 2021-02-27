@@ -53,7 +53,7 @@ carouselHolder.onclick = (e) => {
   } else if(vInfo.style.display === "none" || vExit.style.display === "none") {
     backHome.style.display = "block"
   }
-  console.log(vTarget);
+  //console.log(vTarget);
 };
 
 right.onclick = () => {
@@ -90,5 +90,5 @@ left.onclick = () => {
   carousel.pause();
 };
 
-console.log('height is ' + window.innerHeight);
-console.log('width is ' + window.innerWidth);
+//console.log('height is ' + window.innerHeight);
+//console.log('width is ' + window.innerWidth);

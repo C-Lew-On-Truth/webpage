@@ -6,6 +6,6 @@ realRap.onclick = () => {
 }
 
 portfolio.onclick = () => {
-    console.log('seen')
+    //console.log('seen')
     window.location.href = 'index.html'
 }
