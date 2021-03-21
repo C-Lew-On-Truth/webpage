@@ -34,7 +34,7 @@ html, body {
     place-items: center;
     text-align: center;
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: 30vh;
     font-size: 3vh;
     padding: 2%;
@@ -44,21 +44,21 @@ html, body {
 .button {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     width: 50%;
     z-index: 1;
     border: none;
 }
 
-.real-rap, .portfolio {
+.real-rap, .portfolio, .github {
     color: white;
     background: black;
     padding: 4%;
     cursor: pointer
 }
 
-.real-rap:hover, .portfolio:hover {
+.real-rap:hover, .portfolio:hover, .github:hover {
     color: red;
 }
 @media screen and (max-width: 950px) {
